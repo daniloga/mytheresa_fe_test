@@ -79,7 +79,7 @@ const DataTable = (props) => {
 
 const mapStateToProps = (state) => ({
   movies: state.movies,
-  currentmovies: state.currentMovies,
+  currentmovies: state.currentmovies,
 })
 
 const mapDispatchToProps = {

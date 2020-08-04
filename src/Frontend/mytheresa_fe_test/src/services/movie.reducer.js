@@ -51,13 +51,13 @@ const movieReducer = (state = initialState, action) => {
         currentmovies: moviesRem,
       }
     case 'SEARCH_MOVIE':
-      debugger
+      
       let filteredMovies = state.movies.filter((movie) => {
         return movie.title.toLowerCase().includes(action.payload)
       })
       return {
         ...state,
-        currentMovies: filteredMovies,
+        currentmovies: filteredMovies,
       }
     default:
       return state

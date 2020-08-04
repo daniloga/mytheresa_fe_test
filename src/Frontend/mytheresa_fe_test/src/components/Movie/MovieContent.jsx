@@ -25,8 +25,6 @@ const MovieContent = (props) => {
     props.onClick(event)
   }
 
-  console.dir(props.movie)
-
   MovieContent.propTypes = {
     movie: PropTypes.object.isRequired,
     onClick: PropTypes.func.isRequired,

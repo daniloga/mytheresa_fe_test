@@ -17,12 +17,11 @@ const Movie = (props) => {
     fetchMovie()
   }, [id])
 
-  console.dir(movie)
   return (
     <>
       <TopNav {...props} />
-      <br />
-      <div style={{padding: '10px'}}>{movie !== undefined && <MovieContent movie={movie} />}</div>
+      
+      <div class='paddingTopNav'>{movie !== undefined && <MovieContent movie={movie} />}</div>
     </>
   )
 }

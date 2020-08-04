@@ -54,8 +54,8 @@ const GenreList = (props) => {
   return (
     <>
       <TopNav onChange={handleSearchChange} searchtype="Genre" />
-      <br />
-      <div style={{ padding: 10 }}>
+
+      <div class="paddingTopNav">
         <MaterialTable
           icons={tableIcons}
           title="Available Genres"

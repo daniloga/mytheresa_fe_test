@@ -48,13 +48,11 @@ const Genre = (props) => {
       setScroll(false)
       return
     }
-    
-
-    getMovieListByGenreId(id,movies.page + 1).then((response) => {
+    getMovieListByGenreId(id, movies ? movies.page + 1 : 1).then((response) => {
       let newMovies = currentMovies
       Array.prototype.push.apply(newMovies, response.results)
-      
-      setCurrentMovieList(newMovies)      
+
+      setCurrentMovieList(newMovies)
       setMovieList(response)
     })
   }
@@ -65,8 +63,8 @@ const Genre = (props) => {
   return (
     <>
       <TopNav {...props} title={id} onChange={handleSearchChange} />
-      <br />
-      <div style={{ padding: 10 }}>
+
+      <div class="paddingTopNav">
         <InfiniteScroll
           dataLength={currentMovies.length}
           next={fetchMoreMovies}
@@ -94,7 +92,16 @@ const Genre = (props) => {
         id={movieId}
         open={open}
         onClose={handleClose}
-        anchorPosition={{ top: 50, left: 50 }}
+        anchorReference="anchorPosition"
+        anchorPosition={{ top: 30, left: 30 }}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
       >
         <MovieContent movie={currentMovie} onClick={handleClose} />
       </Popover>

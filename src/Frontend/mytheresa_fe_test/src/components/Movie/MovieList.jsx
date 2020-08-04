@@ -15,8 +15,9 @@ const MovieList = (props) => {
   return (
     <>
       <TopNav {...props} onChange={handleSearchChange} />
-      <br />
-      <DataTable />
+      <div class="paddingTopNav">
+        <DataTable />
+      </div>
     </>
   )
 }

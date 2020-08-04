@@ -42,9 +42,9 @@ const App = (props) => {
 
 const mapStateToProps = (state) => ({
   genres: state.genres,
-  currentgenres: state.currentGenres,
+  currentgenres: state.currentgenres,
   movies: state.movies,
-  currentmovies: state.currentMovies,
+  currentmovies: state.currentmovies,
 })
 
 const mapDispatchToProps = {
