@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "eb2e3dd4-1bbc-42fe-b52f-3a449d3b7983",
+		"name": "mytheresa_fe_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "3/genre/movie/list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZTNjMzJiNWUzNDBlZDk4ZjljZDg4NGRjNmFlMTZiNCIsInN1YiI6IjVmMjJiY2Q5NWIxMjQwMDAzNDJhOTJiYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dhOg5XCphI-nO-Q2adA6-g1iR1uGU5o2MM9kasBq2eM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/3/discover/movie?with_genres=18&page=1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"3",
+						"discover",
+						"movie"
+					],
+					"query": [
+						{
+							"key": "with_genres",
+							"value": "18"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{baseUrl}}/3/genre/movie/list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZTNjMzJiNWUzNDBlZDk4ZjljZDg4NGRjNmFlMTZiNCIsInN1YiI6IjVmMjJiY2Q5NWIxMjQwMDAzNDJhOTJiYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dhOg5XCphI-nO-Q2adA6-g1iR1uGU5o2MM9kasBq2eM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/3/genre/movie/list",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"3",
+						"genre",
+						"movie",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{baseUrl}}/3/movie/561",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZTNjMzJiNWUzNDBlZDk4ZjljZDg4NGRjNmFlMTZiNCIsInN1YiI6IjVmMjJiY2Q5NWIxMjQwMDAzNDJhOTJiYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dhOg5XCphI-nO-Q2adA6-g1iR1uGU5o2MM9kasBq2eM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/3/movie/561",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"3",
+						"movie",
+						"561"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
